@@ -23,9 +23,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
       <div class="flex items-center justify-between">
         <a href="#" class="inline-flex items-center gap-2 sm:gap-3 group" aria-label="Senja home">
-          <div class="h-8 w-8 sm:h-9 sm:w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white grid place-items-center shadow-md shadow-indigo-500/15 ring-1 ring-white/20">
-            <span class="text-base sm:text-lg font-semibold tracking-tight">S</span>
-          </div>
+
           <span class="text-lg sm:text-xl font-semibold tracking-tight">Senja</span>
         </a>
 
@@ -114,43 +112,13 @@
 
           <!-- Illustration Card -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 order-1 lg:order-2">
-            <div class="relative rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-indigo-500/10 p-4 sm:p-6 md:p-8 max-w-full">
-              <div class="absolute -top-8 -right-8 h-24 w-24 rounded-full bg-gradient-to-tr from-indigo-200 to-violet-200 blur-2xl"></div>
-              <div class="flex items-center justify-center w-full">
-                <!-- Inline SVG illustration: elderly with AI assistant -->
-                <svg viewBox="0 0 480 320" class="w-full max-w-sm md:max-w-md" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of elderly person with AI assistant">
-                  <defs>
-                    <linearGradient id="g1" x1="0" x2="1">
-                      <stop offset="0" stop-color="#a5b4fc"/>
-                      <stop offset="1" stop-color="#c4b5fd"/>
-                    </linearGradient>
-                    <linearGradient id="g2" x1="0" x2="1">
-                      <stop offset="0" stop-color="#22d3ee"/>
-                      <stop offset="1" stop-color="#818cf8"/>
-                    </linearGradient>
-                  </defs>
-                  <rect x="0" y="0" width="480" height="320" rx="24" fill="#f8fafc"/>
-                  <!-- floor -->
-                  <ellipse cx="240" cy="260" rx="170" ry="24" fill="#e5e7eb"/>
-                  <!-- Elderly person -->
-                  <circle cx="165" cy="120" r="32" fill="#fde68a"/>
-                  <rect x="120" y="150" width="90" height="90" rx="22" fill="url(#g1)"/>
-                  <rect x="150" y="230" width="16" height="40" rx="8" fill="#94a3b8"/>
-                  <rect x="130" y="230" width="16" height="40" rx="8" fill="#94a3b8"/>
-                  <!-- cane -->
-                  <rect x="210" y="200" width="10" height="60" rx="5" fill="#475569"/>
-                  <circle cx="215" cy="265" r="6" fill="#334155"/>
-                  <!-- AI assistant (friendly robot) -->
-                  <rect x="270" y="140" width="96" height="76" rx="20" fill="url(#g2)"/>
-                  <rect x="282" y="216" width="72" height="12" rx="6" fill="#22d3ee"/>
-                  <circle cx="295" cy="170" r="8" fill="#0ea5e9"/>
-                  <circle cx="339" cy="170" r="8" fill="#0ea5e9"/>
-                  <rect x="302" y="186" width="30" height="8" rx="4" fill="#0ea5e9"/>
-                  <!-- gentle sparkles -->
-                  <g stroke="#6366f1" stroke-width="1.5" fill="none" stroke-linecap="round">
-                    <path d="M250 90l0 10M245 95l10 0M400 100l0 10M395 105l10 0"/>
-                  </g>
-                </svg>
+            <div class="relative rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-indigo-500/10 p-4 sm:p-6 md:p-8 max-w-full overflow-hidden">
+              <div class="absolute -top-4 -right-4 h-16 w-16 sm:h-20 sm:w-20 rounded-full bg-gradient-to-tr from-indigo-200 to-violet-200 blur-2xl opacity-60"></div>
+              <div class="flex items-center justify-center w-full relative z-10">
+                <!-- Senja Logo -->
+                <div class="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl ring-1 ring-slate-200 shadow-inner overflow-hidden">
+                  <img src="logo_nobg_f.png" alt="Senja - Caring AI Logo" class="w-full h-full object-cover drop-shadow-sm">
+                </div>
               </div>
               <div class="mt-4 flex items-center gap-3 text-sm text-slate-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -202,16 +170,7 @@
           <div class="order-1 lg:order-2 reveal opacity-0 translate-y-6 transition-all duration-700 delay-100">
             <div class="rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-violet-500/10 p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-all">
               <div class="aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-slate-200">
-                <!-- Illustration substitute card -->
-                <div class="w-full h-full relative grid place-items-center bg-gradient-to-br from-sky-100 via-indigo-100 to-violet-100">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-16 sm:h-20 md:h-24 w-16 sm:w-20 md:w-24 text-indigo-500/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
-                    <circle cx="9" cy="7" r="4"/>
-                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
-                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                  </svg>
-                  <p class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-slate-600 text-xs sm:text-sm bg-white/70 rounded-lg px-2 sm:px-3 py-1 sm:py-1.5 ring-1 ring-slate-200 shadow-sm">AI and elders, sharing a moment</p>
-                </div>
+                <img src="illustration_1.png">
               </div>
               <div class="mt-4 flex items-center gap-3 text-xs sm:text-sm text-slate-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -236,7 +195,6 @@
           <!-- Product 1 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
             <div class="flex items-start justify-between">
-              <div class="text-2xl sm:text-3xl" aria-hidden="true">🤖</div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path d="M12 8V4H8"/>
                 <rect x="4" y="8" width="16" height="12" rx="2"/>
@@ -260,7 +218,6 @@
           <!-- Product 2 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
             <div class="flex items-start justify-between">
-              <div class="text-2xl sm:text-3xl" aria-hidden="true">🔊</div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path d="m6.5 11-2.5 2.5V10L6.5 7.5"/>
                 <path d="M8 7v10l6 4V3Z"/>
@@ -280,7 +237,6 @@
           <!-- Product 3 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5 sm:col-span-2 lg:col-span-1">
             <div class="flex items-start justify-between">
-              <div class="text-2xl sm:text-3xl" aria-hidden="true">⌚</div>
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <rect x="6" y="7" width="12" height="10" rx="2"/>
                 <path d="M10 2h4v3h-4zM10 19h4v3h-4z"/>
@@ -563,7 +519,7 @@
               </a>
             </div>
           </div>
-          
+
           <div>
             <h4 class="text-sm font-medium text-slate-900">Company</h4>
             <ul class="mt-3 space-y-2 text-sm">
@@ -573,7 +529,7 @@
               <li><a href="#" class="text-slate-700 hover:text-slate-900 transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 class="text-sm font-medium text-slate-900">Products</h4>
             <ul class="mt-3 space-y-2 text-sm">
@@ -582,7 +538,7 @@
               <li><a href="#products" class="text-slate-700 hover:text-slate-900 transition-colors">Wearable</a></li>
             </ul>
           </div>
-          
+
           <div>
             <h4 class="text-sm font-medium text-slate-900">Get Updates</h4>
             <p class="mt-3 text-xs sm:text-sm text-slate-600">Care tips and new features, once a month.</p>
@@ -637,7 +593,7 @@
     // Mobile menu toggle
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    
+
     if (mobileMenuBtn && mobileMenu) {
       mobileMenuBtn.addEventListener('click', () => {
         const isHidden = mobileMenu.classList.contains('hidden');
@@ -745,7 +701,7 @@
           const headerOffset = 80;
           const elementPosition = target.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          
+
           window.scrollTo({
             top: offsetPosition,
             behavior: 'smooth'
