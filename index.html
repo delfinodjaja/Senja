@@ -20,26 +20,52 @@
 
   <!-- Header -->
   <header class="sticky top-0 z-40 backdrop-blur-md bg-white/60 border-b border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#" class="inline-flex items-center gap-3 group" aria-label="Senja home">
-        <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white grid place-items-center shadow-md shadow-indigo-500/15 ring-1 ring-white/20">
-          <span class="text-lg font-semibold tracking-tight">S</span>
-        </div>
-        <span class="text-xl font-semibold tracking-tight">Senja</span>
-      </a>
-      <nav class="hidden md:flex items-center gap-8 text-sm">
-        <a href="#about" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4">About</a>
-        <a href="#products" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4">Products</a>
-        <a href="#features" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4">Features</a>
-        <a href="#how" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4">How it Works</a>
-        <a href="#faq" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4">FAQ</a>
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="#cta" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow-md hover:from-indigo-400 hover:to-violet-600 transition-all ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
-          <span>Get Started</span>
-          <!-- lucide:arrow-right -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
+      <div class="flex items-center justify-between">
+        <a href="#" class="inline-flex items-center gap-2 sm:gap-3 group" aria-label="Senja home">
+          <div class="h-8 w-8 sm:h-9 sm:w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white grid place-items-center shadow-md shadow-indigo-500/15 ring-1 ring-white/20">
+            <span class="text-base sm:text-lg font-semibold tracking-tight">S</span>
+          </div>
+          <span class="text-lg sm:text-xl font-semibold tracking-tight">Senja</span>
         </a>
+
+        <!-- Mobile menu button -->
+        <button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-slate-900 hover:bg-white/50 transition-colors" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-btn">
+          <span class="sr-only">Open main menu</span>
+          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm">
+          <a href="#about" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 transition-colors">About</a>
+          <a href="#products" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 transition-colors">Products</a>
+          <a href="#features" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 transition-colors">Features</a>
+          <a href="#how" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 transition-colors">How it Works</a>
+          <a href="#faq" class="text-slate-700 hover:text-slate-900 hover:underline underline-offset-4 transition-colors">FAQ</a>
+        </nav>
+
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-500 to-violet-500 text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow-md hover:from-indigo-400 hover:to-violet-600 transition-all ring-1 ring-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+            <span>Contact Us</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div class="md:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-white/80 backdrop-blur-sm rounded-lg mt-2 ring-1 ring-slate-200">
+          <a href="#about" class="block px-3 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">About</a>
+          <a href="#products" class="block px-3 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">Products</a>
+          <a href="#features" class="block px-3 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">Features</a>
+          <a href="#how" class="block px-3 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">How it Works</a>
+          <a href="#faq" class="block px-3 py-2 text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors">FAQ</a>
+          <a href="#contact" class="block px-3 py-2 text-indigo-600 hover:text-indigo-700 font-medium rounded-md transition-colors">Contact Us</a>
+        </div>
       </div>
     </div>
   </header>
@@ -47,50 +73,52 @@
   <main>
     <!-- Hero -->
     <section class="relative overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 pt-16 md:pt-24 pb-10">
-        <div class="grid md:grid-cols-2 gap-10 items-center">
-          <div class="reveal opacity-0 translate-y-4 transition-all duration-700">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-16 md:pt-24 pb-8 sm:pb-10">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+          <div class="reveal opacity-0 translate-y-4 transition-all duration-700 order-2 lg:order-1">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight text-slate-900 leading-tight">
               Senja – Caring AI for a Better Tomorrow
             </h1>
-            <p class="mt-5 text-lg md:text-xl text-slate-700" style="font-family: Nunito, Inter, ui-sans-serif;">
+            <p class="mt-4 sm:mt-5 text-base sm:text-lg md:text-xl text-slate-700 leading-relaxed" style="font-family: Nunito, Inter, ui-sans-serif;">
               Empowering the elderly with comfort, safety, and companionship.
             </p>
-            <div class="mt-8 flex flex-wrap items-center gap-4">
-              <a href="#cta" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-6 py-3 text-base font-medium shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-violet-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
-                <!-- lucide:sparkles -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 2v4m0 12v4m7-9h4M2 11H6m9.657-6.657L13.5 6.5m-3 11-2.157 2.157M6.343 4.343 8.5 6.5m11.157 11.157L17.5 17.5"/></svg>
-                Get Started
+            <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+              <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-6 py-3 text-base font-medium shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-violet-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -ml-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11 2v4m0 12v4m7-9h4M2 11H6m9.657-6.657L13.5 6.5m-3 11-2.157 2.157M6.343 4.343 8.5 6.5m11.157 11.157L17.5 17.5"/>
+                </svg>
+                Explore Products
               </a>
-              <a href="#about" class="inline-flex items-center gap-2 rounded-2xl bg-white/70 text-slate-900 px-6 py-3 text-base font-medium ring-1 ring-slate-200 hover:ring-slate-300 hover:bg-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
-                <!-- lucide:info -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.068.676V16.5m-.75-9.75h.008v.008H11.25V6.75zM12 21a9 9 0 100-18 9 9 0 000 18z"/></svg>
+              <a href="#about" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-2xl bg-white/70 text-slate-900 px-6 py-3 text-base font-medium ring-1 ring-slate-200 hover:ring-slate-300 hover:bg-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.068.676V16.5m-.75-9.75h.008v.008H11.25V6.75zM12 21a9 9 0 100-18 9 9 0 000 18z"/>
+                </svg>
                 Learn more
               </a>
             </div>
-            <div class="mt-8 grid grid-cols-3 gap-6 text-center">
-              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-4 shadow-sm">
-                <div class="text-2xl font-semibold tracking-tight text-slate-900">24/7</div>
-                <div class="text-sm text-slate-600">Always On</div>
+            <div class="mt-6 sm:mt-8 grid grid-cols-3 gap-3 sm:gap-6 text-center">
+              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-3 sm:p-4 shadow-sm">
+                <div class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">24/7</div>
+                <div class="text-xs sm:text-sm text-slate-600">Always On</div>
               </div>
-              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-4 shadow-sm">
-                <div class="text-2xl font-semibold tracking-tight text-slate-900">SOS</div>
-                <div class="text-sm text-slate-600">Emergency Ready</div>
+              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-3 sm:p-4 shadow-sm">
+                <div class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">SOS</div>
+                <div class="text-xs sm:text-sm text-slate-600">Emergency Ready</div>
               </div>
-              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-4 shadow-sm">
-                <div class="text-2xl font-semibold tracking-tight text-slate-900">Secure</div>
-                <div class="text-sm text-slate-600">Privacy First</div>
+              <div class="rounded-xl bg-white/70 ring-1 ring-slate-200 p-3 sm:p-4 shadow-sm">
+                <div class="text-xl sm:text-2xl font-semibold tracking-tight text-slate-900">Secure</div>
+                <div class="text-xs sm:text-sm text-slate-600">Privacy First</div>
               </div>
             </div>
           </div>
 
           <!-- Illustration Card -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100">
-            <div class="relative rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-indigo-500/10 p-6 md:p-8">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 order-1 lg:order-2">
+            <div class="relative rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-indigo-500/10 p-4 sm:p-6 md:p-8">
               <div class="absolute -top-8 -right-8 h-24 w-24 rounded-full bg-gradient-to-tr from-indigo-200 to-violet-200 blur-2xl"></div>
               <div class="flex items-center justify-center">
                 <!-- Inline SVG illustration: elderly with AI assistant -->
-                <svg viewBox="0 0 480 320" class="w-full max-w-md" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of elderly person with AI assistant">
+                <svg viewBox="0 0 480 320" class="w-full max-w-sm md:max-w-md" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration of elderly person with AI assistant">
                   <defs>
                     <linearGradient id="g1" x1="0" x2="1">
                       <stop offset="0" stop-color="#a5b4fc"/>
@@ -125,8 +153,10 @@
                 </svg>
               </div>
               <div class="mt-4 flex items-center gap-3 text-sm text-slate-600">
-                <!-- lucide:shield-check -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
                 HIPAA-aware design, privacy-first.
               </div>
             </div>
@@ -137,44 +167,56 @@
 
     <!-- About -->
     <section id="about" class="relative">
-      <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div class="order-2 lg:order-1 reveal opacity-0 translate-y-6 transition-all duration-700">
-            <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Why Senja?</h2>
-            <p class="mt-4 text-lg text-slate-700 leading-relaxed">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Why Senja?</h2>
+            <p class="mt-4 text-base sm:text-lg text-slate-700 leading-relaxed">
               Senja is built to bridge the gap between technology and human warmth. With intuitive AI, we make aging safer, healthier, and happier.
             </p>
-            <ul class="mt-6 space-y-3">
+            <ul class="mt-6 space-y-3 sm:space-y-4">
               <li class="flex items-start gap-3">
-                <!-- lucide:heart -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-rose-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 14c-1.5 3-7 7-7 7s-5.5-4-7-7a4 4 0 1 1 7-4 4 4 0 1 1 7 4Z"/></svg>
-                <span>Human-centered companion that listens and supports daily life.</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-rose-500 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M19 14c-1.5 3-7 7-7 7s-5.5-4-7-7a4 4 0 1 1 7-4 4 4 0 1 1 7 4Z"/>
+                </svg>
+                <span class="text-sm sm:text-base">Human-centered companion that listens and supports daily life.</span>
               </li>
               <li class="flex items-start gap-3">
-                <!-- lucide:shield -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/></svg>
-                <span>Security and privacy baked into every experience.</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+                </svg>
+                <span class="text-sm sm:text-base">Security and privacy baked into every experience.</span>
               </li>
               <li class="flex items-start gap-3">
-                <!-- lucide:accessibility -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="4" r="1"/><path d="m18 19 1-7-6 1"/><path d="m5 8 3-3 5.5 3-5.5 3L1 11V9z"/><path d="M4 19l3-4 4 2 3-3"/><path d="M2 20h12"/></svg>
-                <span>Accessible design for vision and hearing challenges.</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-5 w-5 text-emerald-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <circle cx="16" cy="4" r="1"/>
+                  <path d="m18 19 1-7-6 1"/>
+                  <path d="m5 8 3-3 5.5 3-5.5 3L1 11V9z"/>
+                  <path d="M4 19l3-4 4 2 3-3"/>
+                  <path d="M2 20h12"/>
+                </svg>
+                <span class="text-sm sm:text-base">Accessible design for vision and hearing challenges.</span>
               </li>
             </ul>
           </div>
           <div class="order-1 lg:order-2 reveal opacity-0 translate-y-6 transition-all duration-700 delay-100">
-            <div class="rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-violet-500/10 p-6 md:p-8 hover:shadow-2xl transition-all">
+            <div class="rounded-3xl bg-white/80 ring-1 ring-slate-200 shadow-xl shadow-violet-500/10 p-4 sm:p-6 md:p-8 hover:shadow-2xl transition-all">
               <div class="aspect-[4/3] overflow-hidden rounded-2xl ring-1 ring-slate-200">
                 <!-- Illustration substitute card -->
                 <div class="w-full h-full relative grid place-items-center bg-gradient-to-br from-sky-100 via-indigo-100 to-violet-100">
-                  <!-- lucide:users -->
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24 text-indigo-500/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                  <p class="absolute bottom-4 left-4 text-slate-600 text-sm bg-white/70 rounded-lg px-3 py-1.5 ring-1 ring-slate-200 shadow-sm">AI and elders, sharing a moment</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-16 sm:h-20 md:h-24 w-16 sm:w-20 md:w-24 text-indigo-500/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                  </svg>
+                  <p class="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 text-slate-600 text-xs sm:text-sm bg-white/70 rounded-lg px-2 sm:px-3 py-1 sm:py-1.5 ring-1 ring-slate-200 shadow-sm">AI and elders, sharing a moment</p>
                 </div>
               </div>
-              <div class="mt-4 flex items-center gap-3 text-sm text-slate-600">
-                <!-- lucide:message-circle -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+              <div class="mt-4 flex items-center gap-3 text-xs sm:text-sm text-slate-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 15a4 4 0 0 1-4 4H7l-4 4V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/>
+                </svg>
                 Natural conversation. Simple setup. Gentle guidance.
               </div>
             </div>
@@ -185,55 +227,72 @@
 
     <!-- Products -->
     <section id="products" class="relative">
-      <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
-          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Our Products</h2>
-          <p class="mt-3 text-lg text-slate-700">Thoughtfully crafted solutions for safe, connected, and joyful living.</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 text-center lg:text-left">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Our Products</h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-700">Thoughtfully crafted solutions for safe, connected, and joyful living.</p>
         </div>
-        <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="mt-8 sm:mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <!-- Product 1 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
             <div class="flex items-start justify-between">
-              <div class="text-3xl" aria-hidden="true">🤖</div>
-              <!-- lucide:bot -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h20"/><path d="M9 14v2"/><path d="M15 14v2"/><path d="M8 10h.01"/><path d="M16 10h.01"/></svg>
+              <div class="text-2xl sm:text-3xl" aria-hidden="true">🤖</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 8V4H8"/>
+                <rect x="4" y="8" width="16" height="12" rx="2"/>
+                <path d="M2 14h20"/>
+                <path d="M9 14v2"/>
+                <path d="M15 14v2"/>
+                <path d="M8 10h.01"/>
+                <path d="M16 10h.01"/>
+              </svg>
             </div>
-            <h3 class="mt-4 text-xl font-semibold tracking-tight text-slate-900">Senja AI</h3>
-            <p class="mt-2 text-slate-700">A caring digital companion that listens, assists, and provides emotional support for seniors.</p>
-            <a href="#cta" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium">
+            <h3 class="mt-4 text-lg sm:text-xl font-semibold tracking-tight text-slate-900">Senja AI</h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">A caring digital companion that listens, assists, and provides emotional support for seniors.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium text-sm sm:text-base transition-colors">
               Learn More
-              <!-- lucide:arrow-right -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+              </svg>
             </a>
           </div>
 
           <!-- Product 2 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
             <div class="flex items-start justify-between">
-              <div class="text-3xl" aria-hidden="true">🔊</div>
-              <!-- lucide:volume -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path d="m6.5 11-2.5 2.5V10L6.5 7.5"/><path d="M8 7v10l6 4V3Z"/><path d="M16 9a3 3 0 0 1 0 6"/></svg>
+              <div class="text-2xl sm:text-3xl" aria-hidden="true">🔊</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path d="m6.5 11-2.5 2.5V10L6.5 7.5"/>
+                <path d="M8 7v10l6 4V3Z"/>
+                <path d="M16 9a3 3 0 0 1 0 6"/>
+              </svg>
             </div>
-            <h3 class="mt-4 text-xl font-semibold tracking-tight text-slate-900">Senja Smart Speaker</h3>
-            <p class="mt-2 text-slate-700">Voice-enabled assistant for reminders, conversations, and emergency alerts.</p>
-            <a href="#cta" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium">
+            <h3 class="mt-4 text-lg sm:text-xl font-semibold tracking-tight text-slate-900">Senja Smart Speaker</h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Voice-enabled assistant for reminders, conversations, and emergency alerts.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium text-sm sm:text-base transition-colors">
               Explore
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+              </svg>
             </a>
           </div>
 
           <!-- Product 3 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-md hover:shadow-xl transition-all hover:-translate-y-0.5 sm:col-span-2 lg:col-span-1">
             <div class="flex items-start justify-between">
-              <div class="text-3xl" aria-hidden="true">⌚</div>
-              <!-- lucide:watch -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><rect x="6" y="7" width="12" height="10" rx="2"/><path d="M10 2h4v3h-4zM10 19h4v3h-4z"/></svg>
+              <div class="text-2xl sm:text-3xl" aria-hidden="true">⌚</div>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <rect x="6" y="7" width="12" height="10" rx="2"/>
+                <path d="M10 2h4v3h-4zM10 19h4v3h-4z"/>
+              </svg>
             </div>
-            <h3 class="mt-4 text-xl font-semibold tracking-tight text-slate-900">Senja Wearable</h3>
-            <p class="mt-2 text-slate-700">Health-monitoring smartwatch with fall detection, medication alerts, and wellness tracking.</p>
-            <a href="#cta" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium">
-              Shop Now
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+            <h3 class="mt-4 text-lg sm:text-xl font-semibold tracking-tight text-slate-900">Senja Wearable</h3>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Health-monitoring smartwatch with fall detection, medication alerts, and wellness tracking.</p>
+            <a href="#contact" class="mt-4 inline-flex items-center gap-1.5 text-indigo-600 hover:text-indigo-700 font-medium text-sm sm:text-base transition-colors">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -242,56 +301,67 @@
 
     <!-- Features -->
     <section id="features" class="relative">
-      <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
-          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Key Features</h2>
-          <p class="mt-3 text-lg text-slate-700">Everything needed for peace of mind—designed with care.</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 text-center lg:text-left">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Key Features</h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-700">Everything needed for peace of mind—designed with care.</p>
         </div>
-        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6">
           <!-- Feature items -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
             <div class="flex items-center gap-3">
-              <!-- lucide:mic -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="8" y="2" width="8" height="12" rx="4"/><path d="M19 10a7 7 0 0 1-14 0"/><path d="M12 19v3"/></svg>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">Natural Voice</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="8" y="2" width="8" height="12" rx="4"/>
+                <path d="M19 10a7 7 0 0 1-14 0"/>
+                <path d="M12 19v3"/>
+              </svg>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight text-slate-900">Natural Voice</h3>
             </div>
-            <p class="mt-2 text-slate-700">24/7 voice assistance with natural conversation</p>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">24/7 voice assistance with natural conversation</p>
           </div>
 
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
             <div class="flex items-center gap-3">
-              <!-- lucide:pill -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m10.5 7.5-6 6a4.243 4.243 0 0 0 6 6l6-6a4.243 4.243 0 0 0-6-6Z"/><path d="M8.5 9.5l6 6"/></svg>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">Reminders</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-emerald-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="m10.5 7.5-6 6a4.243 4.243 0 0 0 6 6l6-6a4.243 4.243 0 0 0-6-6Z"/>
+                <path d="M8.5 9.5l6 6"/>
+              </svg>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight text-slate-900">Reminders</h3>
             </div>
-            <p class="mt-2 text-slate-700">Medication and appointment reminders</p>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Medication and appointment reminders</p>
           </div>
 
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-125 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-125 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
             <div class="flex items-center gap-3">
-              <!-- lucide:siren -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-rose-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6.5 19h11l1.5-6.5a5 5 0 1 0-14 0Z"/><path d="M4 19h16"/><path d="M12 6V2"/></svg>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">Emergency SOS</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-rose-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6.5 19h11l1.5-6.5a5 5 0 1 0-14 0Z"/>
+                <path d="M4 19h16"/>
+                <path d="M12 6V2"/>
+              </svg>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight text-slate-900">Emergency SOS</h3>
             </div>
-            <p class="mt-2 text-slate-700">Emergency SOS alerts with caregiver notification</p>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Emergency SOS alerts with caregiver notification</p>
           </div>
 
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
             <div class="flex items-center gap-3">
-              <!-- lucide:activity -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-violet-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12H18l-3 7L9 5l-3 7H2"/></svg>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">Health Insights</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-violet-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 12H18l-3 7L9 5l-3 7H2"/>
+              </svg>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight text-slate-900">Health Insights</h3>
             </div>
-            <p class="mt-2 text-slate-700">Health monitoring with AI-driven insights</p>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Health monitoring with AI-driven insights</p>
           </div>
 
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-175 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-175 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 hover:shadow-lg hover:-translate-y-0.5 transition-all sm:col-span-2 xl:col-span-1">
             <div class="flex items-center gap-3">
-              <!-- lucide:hearing-aid (use ear icon) -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-sky-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 8a6 6 0 0 1 12 0c0 3.5-2 5-3.5 6.5S13 17 13 20"/><path d="M9 9a3 3 0 0 1 6 0"/></svg>
-              <h3 class="text-lg font-semibold tracking-tight text-slate-900">Accessible</h3>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 sm:h-6 w-5 sm:w-6 text-sky-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M6 8a6 6 0 0 1 12 0c0 3.5-2 5-3.5 6.5S13 17 13 20"/>
+                <path d="M9 9a3 3 0 0 1 6 0"/>
+              </svg>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight text-slate-900">Accessible</h3>
             </div>
-            <p class="mt-2 text-slate-700">Accessible design for seniors with vision and hearing challenges</p>
+            <p class="mt-2 text-sm sm:text-base text-slate-700">Accessible design for seniors with vision and hearing challenges</p>
           </div>
         </div>
       </div>
@@ -299,50 +369,61 @@
 
     <!-- How It Works -->
     <section id="how" class="relative">
-      <div class="max-w-7xl mx-auto px-6 py-16 md:py-24">
-        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
-          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">How It Works</h2>
-          <p class="mt-3 text-lg text-slate-700">Simple steps to get started in minutes.</p>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 text-center lg:text-left">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">How It Works</h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-700">Simple steps to get started in minutes.</p>
         </div>
-        <div class="mt-10 grid lg:grid-cols-3 gap-6">
+        <div class="mt-8 sm:mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           <!-- Step 1 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-sm">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-sm">
             <div class="flex items-center gap-3">
-              <div class="h-10 w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium">1</div>
-              <h3 class="text-lg font-semibold tracking-tight">Setup</h3>
+              <div class="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium text-sm sm:text-base">1</div>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight">Setup</h3>
             </div>
-            <p class="mt-3 text-slate-700">Step 1: Set up your Senja device in just minutes.</p>
-            <div class="mt-4 text-slate-600 text-sm flex items-center gap-2">
-              <!-- lucide:wifi -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1"/></svg>
+            <p class="mt-3 text-sm sm:text-base text-slate-700">Set up your Senja device in just minutes.</p>
+            <div class="mt-4 text-slate-600 text-xs sm:text-sm flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"/>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"/>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                <circle cx="12" cy="20" r="1"/>
+              </svg>
               Quick pairing and onboarding
             </div>
           </div>
 
           <!-- Step 2 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-sm">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-sm">
             <div class="flex items-center gap-3">
-              <div class="h-10 w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium">2</div>
-              <h3 class="text-lg font-semibold tracking-tight">Connect</h3>
+              <div class="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium text-sm sm:text-base">2</div>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight">Connect</h3>
             </div>
-            <p class="mt-3 text-slate-700">Step 2: Connect it with your caregiver or family.</p>
-            <div class="mt-4 text-slate-600 text-sm flex items-center gap-2">
-              <!-- lucide:users -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <p class="mt-3 text-sm sm:text-base text-slate-700">Connect it with your caregiver or family.</p>
+            <div class="mt-4 text-slate-600 text-xs sm:text-sm flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
               Secure caregiver portal
             </div>
           </div>
 
           <!-- Step 3 -->
-          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-125 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-6 shadow-sm">
+          <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-125 rounded-2xl bg-white/80 ring-1 ring-slate-200 p-4 sm:p-6 shadow-sm sm:col-span-2 lg:col-span-1">
             <div class="flex items-center gap-3">
-              <div class="h-10 w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium">3</div>
-              <h3 class="text-lg font-semibold tracking-tight">Thrive</h3>
+              <div class="h-8 w-8 sm:h-10 sm:w-10 rounded-xl bg-indigo-600 text-white grid place-items-center font-medium text-sm sm:text-base">3</div>
+              <h3 class="text-base sm:text-lg font-semibold tracking-tight">Thrive</h3>
             </div>
-            <p class="mt-3 text-slate-700">Step 3: Enjoy daily support, safety, and companionship.</p>
-            <div class="mt-4 text-slate-600 text-sm flex items-center gap-2">
-              <!-- lucide:smile -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg>
+            <p class="mt-3 text-sm sm:text-base text-slate-700">Enjoy daily support, safety, and companionship.</p>
+            <div class="mt-4 text-slate-600 text-xs sm:text-sm flex items-center gap-2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-indigo-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <path d="M9 9h.01M15 9h.01"/>
+              </svg>
               Gentle, reassuring presence
             </div>
           </div>
@@ -352,52 +433,62 @@
 
     <!-- FAQ -->
     <section id="faq" class="relative">
-      <div class="max-w-3xl mx-auto px-6 py-16 md:py-24">
-        <div class="reveal opacity-0 translate-y-6 transition-all duration-700">
-          <h2 class="text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Frequently Asked Questions</h2>
-          <p class="mt-3 text-lg text-slate-700">Answers to common questions about Senja.</p>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-24">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 text-center lg:text-left">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight text-slate-900">Frequently Asked Questions</h2>
+          <p class="mt-3 text-base sm:text-lg text-slate-700">Answers to common questions about Senja.</p>
         </div>
         <div class="mt-8 space-y-3">
           <!-- Item 1 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-75 rounded-xl bg-white/80 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-            <button type="button" class="w-full px-5 py-4 text-left flex items-start justify-between gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
+            <button type="button" class="w-full px-4 sm:px-5 py-4 text-left flex items-start justify-between gap-4 sm:gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
               <div>
-                <p class="text-base md:text-lg font-medium text-slate-900">Is Senja easy to use for seniors?</p>
-                <p class="mt-2 text-slate-700 faq-answer hidden">Yes, Senja was designed with simplicity and accessibility in mind.</p>
+                <p class="text-sm sm:text-base md:text-lg font-medium text-slate-900">Is Senja easy to use for seniors?</p>
+                <p class="mt-2 text-sm sm:text-base text-slate-700 faq-answer hidden">Yes, Senja was designed with simplicity and accessibility in mind.</p>
               </div>
               <span class="shrink-0 mt-1 text-slate-500">
-                <!-- lucide:plus -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
-                <!-- lucide:minus -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"/>
+                </svg>
               </span>
             </button>
           </div>
 
           <!-- Item 2 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-100 rounded-xl bg-white/80 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-            <button type="button" class="w-full px-5 py-4 text-left flex items-start justify-between gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
+            <button type="button" class="w-full px-4 sm:px-5 py-4 text-left flex items-start justify-between gap-4 sm:gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
               <div>
-                <p class="text-base md:text-lg font-medium text-slate-900">Can caregivers connect to Senja?</p>
-                <p class="mt-2 text-slate-700 faq-answer hidden">Absolutely, caregivers can receive alerts and updates in real-time.</p>
+                <p class="text-sm sm:text-base md:text-lg font-medium text-slate-900">Can caregivers connect to Senja?</p>
+                <p class="mt-2 text-sm sm:text-base text-slate-700 faq-answer hidden">Absolutely, caregivers can receive alerts and updates in real-time.</p>
               </div>
               <span class="shrink-0 mt-1 text-slate-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"/>
+                </svg>
               </span>
             </button>
           </div>
 
           <!-- Item 3 -->
           <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-125 rounded-xl bg-white/80 ring-1 ring-slate-200 hover:ring-slate-300 transition">
-            <button type="button" class="w-full px-5 py-4 text-left flex items-start justify-between gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
+            <button type="button" class="w-full px-4 sm:px-5 py-4 text-left flex items-start justify-between gap-4 sm:gap-6 faq-toggle focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400 rounded-xl">
               <div>
-                <p class="text-base md:text-lg font-medium text-slate-900">Does Senja work offline?</p>
-                <p class="mt-2 text-slate-700 faq-answer hidden">Core features like reminders and emergency alerts still function offline.</p>
+                <p class="text-sm sm:text-base md:text-lg font-medium text-slate-900">Does Senja work offline?</p>
+                <p class="mt-2 text-sm sm:text-base text-slate-700 faq-answer hidden">Core features like reminders and emergency alerts still function offline.</p>
               </div>
               <span class="shrink-0 mt-1 text-slate-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12h14"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M12 5v14M5 12h14"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 icon-minus hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 12h14"/>
+                </svg>
               </span>
             </button>
           </div>
@@ -405,38 +496,43 @@
       </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section id="cta" class="relative">
-      <div class="max-w-7xl mx-auto px-6 pb-16 md:pb-24">
-        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 rounded-3xl bg-white/80 ring-1 ring-slate-200 p-8 md:p-12 shadow-xl overflow-hidden">
+    <!-- Contact Banner -->
+    <section id="contact" class="relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16 md:pb-24">
+        <div class="reveal opacity-0 translate-y-6 transition-all duration-700 rounded-3xl bg-white/80 ring-1 ring-slate-200 p-6 sm:p-8 md:p-12 shadow-xl overflow-hidden">
           <div class="absolute -right-12 -top-12 h-56 w-56 rounded-full bg-gradient-to-br from-indigo-300/40 to-violet-300/40 blur-3xl"></div>
-          <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div class="grid lg:grid-cols-2 gap-6 sm:gap-8 items-center">
             <div>
-              <h3 class="text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">Bring Care Closer with Senja</h3>
-              <p class="mt-3 text-lg text-slate-700">Technology that truly cares.</p>
-              <div class="mt-6 flex flex-wrap gap-4">
-                <a href="#" class="inline-flex items-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-6 py-3 text-base font-medium shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-violet-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
-                  Join the Senja Family
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+              <h3 class="text-xl sm:text-2xl md:text-3xl font-semibold tracking-tight text-slate-900">Bring Care Closer with Senja</h3>
+              <p class="mt-3 text-base sm:text-lg text-slate-700">Technology that truly cares.</p>
+              <div class="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <a href="mailto:hello@senja.com" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-6 py-3 text-base font-medium shadow-md hover:shadow-lg hover:from-indigo-500 hover:to-violet-700 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+                  Contact Us Today
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 -mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+                  </svg>
                 </a>
-                <a href="#products" class="inline-flex items-center gap-2 rounded-2xl bg-white/70 text-slate-900 px-6 py-3 text-base font-medium ring-1 ring-slate-200 hover:ring-slate-300 hover:bg-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+                <a href="#products" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-white/70 text-slate-900 px-6 py-3 text-base font-medium ring-1 ring-slate-200 hover:ring-slate-300 hover:bg-white transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
                   See Products
                 </a>
               </div>
             </div>
-            <div class="md:justify-self-end">
-              <div class="rounded-2xl bg-gradient-to-br from-indigo-100 to-violet-100 p-4 ring-1 ring-slate-200 w-full max-w-sm">
-                <div class="flex items-center gap-3 text-slate-700">
-                  <!-- lucide:phone -->
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.86.31 1.7.57 2.5a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.67-.12a2 2 0 0 1 2.11.45l1.27 1.27A2 2 0 0 1 22 16.92z"/></svg>
+            <div class="lg:justify-self-end w-full max-w-sm">
+              <div class="rounded-2xl bg-gradient-to-br from-indigo-100 to-violet-100 p-4 sm:p-5 ring-1 ring-slate-200">
+                <div class="flex items-start gap-3 text-slate-700">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-600 flex-shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.09 4.18 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.72c.12.86.31 1.7.57 2.5a2 2 0 0 1-.45 2.11L8 9a16 16 0 0 0 7 7l.67-.12a2 2 0 0 1 2.11.45l1.27 1.27A2 2 0 0 1 22 16.92z"/>
+                  </svg>
                   <div>
-                    <p class="font-medium text-slate-900">Talk to a specialist</p>
-                    <p class="text-sm">We’ll help you choose the right solution.</p>
+                    <p class="font-medium text-slate-900 text-sm sm:text-base">Talk to a specialist</p>
+                    <p class="text-xs sm:text-sm">We'll help you choose the right solution.</p>
                   </div>
                 </div>
-                <div class="mt-3 flex items-center gap-2 text-sm text-slate-600">
-                  <!-- lucide:check-circle -->
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08A10 10 0 1 1 12 2a10 10 0 0 1 10 9.08z"/><path d="m9 12 2 2 4-4"/></svg>
+                <div class="mt-3 flex items-center gap-2 text-xs sm:text-sm text-slate-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-emerald-600 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M22 11.08A10 10 0 1 1 12 2a10 10 0 0 1 10 9.08z"/>
+                    <path d="m9 12 2 2 4-4"/>
+                  </svg>
                   No obligation • Quick setup • Friendly support
                 </div>
               </div>
@@ -448,73 +544,84 @@
 
     <!-- Footer -->
     <footer class="relative border-t border-slate-200/80 bg-white/70">
-      <div class="max-w-7xl mx-auto px-6 py-12">
-        <div class="grid md:grid-cols-3 gap-8 items-start">
-          <div>
-            <div class="inline-flex items-center gap-3">
-              <div class="h-9 w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white grid place-items-center ring-1 ring-white/20">
-                <span class="text-lg font-semibold tracking-tight">S</span>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 items-start">
+          <div class="sm:col-span-2 lg:col-span-1">
+            <div class="inline-flex items-center gap-2 sm:gap-3">
+              <div class="h-8 w-8 sm:h-9 sm:w-9 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 text-white grid place-items-center ring-1 ring-white/20">
+                <span class="text-base sm:text-lg font-semibold tracking-tight">S</span>
               </div>
-              <span class="text-lg font-semibold tracking-tight">Senja</span>
+              <span class="text-base sm:text-lg font-semibold tracking-tight">Senja</span>
             </div>
-            <p class="mt-3 text-slate-700 text-base">Join the Senja family today.</p>
+            <p class="mt-3 text-slate-700 text-sm sm:text-base">Join the Senja family today.</p>
             <div class="mt-4">
-              <a href="#cta" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow-md hover:from-indigo-500 hover:to-violet-700 transition-all">
-                Get Started
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
+              <a href="mailto:hello@senja.com" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-4 py-2 text-sm font-medium shadow-sm hover:shadow-md hover:from-indigo-500 hover:to-violet-700 transition-all">
+                Contact Us
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+                </svg>
               </a>
             </div>
           </div>
-          <div class="md:col-span-2 grid sm:grid-cols-3 gap-6">
-            <div>
-              <h4 class="text-sm font-medium text-slate-900">Company</h4>
-              <ul class="mt-3 space-y-2 text-sm">
-                <li><a href="#about" class="text-slate-700 hover:text-slate-900">About Us</a></li>
-                <li><a href="#cta" class="text-slate-700 hover:text-slate-900">Contact</a></li>
-                <li><a href="#faq" class="text-slate-700 hover:text-slate-900">Support</a></li>
-                <li><a href="#" class="text-slate-700 hover:text-slate-900">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-sm font-medium text-slate-900">Products</h4>
-              <ul class="mt-3 space-y-2 text-sm">
-                <li><a href="#products" class="text-slate-700 hover:text-slate-900">Senja AI</a></li>
-                <li><a href="#products" class="text-slate-700 hover:text-slate-900">Smart Speaker</a></li>
-                <li><a href="#products" class="text-slate-700 hover:text-slate-900">Wearable</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 class="text-sm font-medium text-slate-900">Get Updates</h4>
-              <p class="mt-3 text-sm text-slate-600">Care tips and new features, once a month.</p>
-              <form class="mt-3 flex gap-2">
-                <input type="email" aria-label="Email address" placeholder="you@example.com" class="flex-1 rounded-xl px-4 py-2.5 text-sm bg-white/80 ring-1 ring-slate-200 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400" required>
-                <button type="submit" class="inline-flex items-center gap-2 rounded-xl bg-indigo-600 text-white px-4 py-2.5 text-sm font-medium shadow-sm hover:bg-indigo-500 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
-                  Subscribe
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -mr-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/></svg>
-                </button>
-              </form>
-              <p id="newsletter-success" class="mt-2 text-emerald-700 text-sm hidden" role="status" aria-live="polite">
-                Thanks for subscribing! Please check your email for a confirmation.
-              </p>
-              <p class="mt-2 text-xs text-slate-500">
-                By subscribing, you agree to our
-                <a href="#" class="text-slate-700 underline decoration-slate-300 hover:text-slate-900">Privacy Policy</a>.
-              </p>
-            </div>
+          
+          <div>
+            <h4 class="text-sm font-medium text-slate-900">Company</h4>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a href="#about" class="text-slate-700 hover:text-slate-900 transition-colors">About Us</a></li>
+              <li><a href="#contact" class="text-slate-700 hover:text-slate-900 transition-colors">Contact</a></li>
+              <li><a href="#faq" class="text-slate-700 hover:text-slate-900 transition-colors">Support</a></li>
+              <li><a href="#" class="text-slate-700 hover:text-slate-900 transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-medium text-slate-900">Products</h4>
+            <ul class="mt-3 space-y-2 text-sm">
+              <li><a href="#products" class="text-slate-700 hover:text-slate-900 transition-colors">Senja AI</a></li>
+              <li><a href="#products" class="text-slate-700 hover:text-slate-900 transition-colors">Smart Speaker</a></li>
+              <li><a href="#products" class="text-slate-700 hover:text-slate-900 transition-colors">Wearable</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4 class="text-sm font-medium text-slate-900">Get Updates</h4>
+            <p class="mt-3 text-xs sm:text-sm text-slate-600">Care tips and new features, once a month.</p>
+            <form class="mt-3 flex flex-col sm:flex-row gap-2">
+              <input type="email" aria-label="Email address" placeholder="you@example.com" class="flex-1 rounded-xl px-3 sm:px-4 py-2 sm:py-2.5 text-sm bg-white/80 ring-1 ring-slate-200 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-violet-400" required>
+              <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 text-white px-3 sm:px-4 py-2 sm:py-2.5 text-sm font-medium shadow-sm hover:bg-indigo-500 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400">
+                Subscribe
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 -mr-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0-3.75 3.75M21 12H3"/>
+                </svg>
+              </button>
+            </form>
+            <p id="newsletter-success" class="mt-2 text-emerald-700 text-sm hidden" role="status" aria-live="polite">
+              Thanks for subscribing! Please check your email for a confirmation.
+            </p>
+            <p class="mt-2 text-xs text-slate-500">
+              By subscribing, you agree to our
+              <a href="#" class="text-slate-700 underline decoration-slate-300 hover:text-slate-900">Privacy Policy</a>.
+            </p>
           </div>
         </div>
 
-        <div class="mt-10 pt-8 border-t border-slate-200/70 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-600">
+        <div class="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-slate-200/70 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-600">
           <p>© <span id="year"></span> Senja. All rights reserved.</p>
           <div class="flex items-center gap-4">
             <a href="#" aria-label="Follow Senja on X" class="hover:text-slate-900 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-5.1-6.64L4.8 22H2l7.03-8.03L1.5 2h6.75l4.61 6.08L18.244 2Zm-2.326 18h1.554L7.21 4H5.57l10.348 16Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2H21l-6.5 7.43L22.5 22H15.9l-5.1-6.64L4.8 22H2l7.03-8.03L1.5 2h6.75l4.61 6.08L18.244 2Zm-2.326 18h1.554L7.21 4H5.57l10.348 16Z"/>
+              </svg>
             </a>
             <a href="#" aria-label="Connect on LinkedIn" class="hover:text-slate-900 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 21.5H3.56V8.86h3.38V21.5ZM5.25 7.28a2.03 2.03 0 1 1 0-4.06 2.03 2.03 0 0 1 0 4.06ZM21.5 21.5h-3.38v-6.2c0-1.48-.03-3.39-2.07-3.39-2.07 0-2.39 1.62-2.39 3.28v6.31H10.3V8.86h3.25v1.72h.05a3.56 3.56 0 0 1 3.2-1.76c3.42 0 4.05 2.25 4.05 5.18v7.5Z"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.94 21.5H3.56V8.86h3.38V21.5ZM5.25 7.28a2.03 2.03 0 1 1 0-4.06 2.03 2.03 0 0 1 0 4.06ZM21.5 21.5h-3.38v-6.2c0-1.48-.03-3.39-2.07-3.39-2.07 0-2.39 1.62-2.39 3.28v6.31H10.3V8.86h3.25v1.72h.05a3.56 3.56 0 0 1 3.2-1.76c3.42 0 4.05 2.25 4.05 5.18v7.5Z"/>
+              </svg>
             </a>
-            <a href="#cta" aria-label="Email Senja support" class="hover:text-slate-900 transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 6.5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2Zm-2 .5H4l8 5 8-5Zm0 2.3-7.45 4.66a1.5 1.5 0 0 1-1.6 0L3 9.3V17h17V9.3Z"/></svg>
+            <a href="mailto:hello@senja.com" aria-label="Email Senja support" class="hover:text-slate-900 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 6.5v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-11a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2Zm-2 .5H4l8 5 8-5Zm0 2.3-7.45 4.66a1.5 1.5 0 0 1-1.6 0L3 9.3V17h17V9.3Z"/>
+              </svg>
             </a>
           </div>
         </div>
@@ -522,10 +629,38 @@
     </footer>
   </main>
 
-  <!-- Scripts: animations, FAQ, newsletter, smooth scroll -->
+  <!-- Scripts: animations, FAQ, newsletter, smooth scroll, mobile menu -->
   <script>
     // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+      });
+
+      // Close mobile menu when clicking on links
+      mobileMenu.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+          mobileMenu.classList.add('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    }
 
     // Reveal on scroll (respects reduced motion)
     (function() {
@@ -545,7 +680,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.2, rootMargin: '0px 0px -10% 0px' });
+      }, { threshold: 0.1, rootMargin: '0px 0px -5% 0px' });
 
       reveals.forEach(el => io.observe(el));
     })();
@@ -578,7 +713,7 @@
         e.preventDefault();
         if (!input || !input.value) return;
 
-        // naive validation
+        // Basic email validation
         const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
         if (!valid) {
           input.focus();
@@ -607,9 +742,24 @@
         const target = document.querySelector(id);
         if (target) {
           e.preventDefault();
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          const headerOffset = 80;
+          const elementPosition = target.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
         }
       });
+    });
+
+    // Handle window resize for mobile menu
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+        if (mobileMenuBtn) mobileMenuBtn.setAttribute('aria-expanded', 'false');
+      }
     });
   </script>
 </body>
